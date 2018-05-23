@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="15008000">
+<Project Type="Project" LVVersion="17008000">
 	<Property Name="varPersistentID:{01F98B17-54C3-4714-B77F-A0E5DE7D0E0E}" Type="Ref">/My Computer/Shared Variables.lvlib/BPCS-10AI300</Property>
 	<Property Name="varPersistentID:{06B76664-9C13-415D-AD0D-DFEC1B8F3BB7}" Type="Ref">/My Computer/Shared Variables.lvlib/BPCS-10TY100</Property>
 	<Property Name="varPersistentID:{09209044-765C-487F-920C-B4CBDDBB8CCB}" Type="Ref">/My Computer/Shared Variables.lvlib/BPCS-10LI200</Property>
@@ -14,8 +14,6 @@
 	<Property Name="varPersistentID:{4899EB22-3CBC-4277-8B88-88C58EC55B9F}" Type="Ref">/My Computer/Shared Variables.lvlib/BPCS-10AY300</Property>
 	<Property Name="varPersistentID:{4D026CDA-D1BF-45CA-918B-3FFBF95DD91E}" Type="Ref">/My Computer/Shared Variables.lvlib/SIS-10LI201</Property>
 	<Property Name="varPersistentID:{5767C3FB-8CC5-4B28-8CB9-4C86813C3655}" Type="Ref">/My Computer/Shared Variables.lvlib/HMI-10TIC100-KPID</Property>
-	<Property Name="varPersistentID:{6301BE15-2A32-4C89-B2EA-C76C749E9ED1}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/BPCS Variables.lvlib/BPCS-SIM-TX-ARRAY</Property>
-	<Property Name="varPersistentID:{7261C0E4-3A03-4C0F-8EF4-701158D7C2C2}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/BPCS Variables.lvlib/SIM-BPCS-RX-ARRAY</Property>
 	<Property Name="varPersistentID:{7513563A-C622-404D-822A-8E0B1E374DBA}" Type="Ref">/My Computer/Shared Variables.lvlib/HMI-10AIC300-KPID</Property>
 	<Property Name="varPersistentID:{76FC3E75-F465-4686-824D-19C4047D8FC1}" Type="Ref">/My Computer/Shared Variables.lvlib/SIS-10AI301</Property>
 	<Property Name="varPersistentID:{7B32615F-4844-4D85-A0FF-69C699E67A02}" Type="Ref">/My Computer/Shared Variables.lvlib/BPCS-TJ0</Property>
@@ -33,7 +31,6 @@
 	<Property Name="varPersistentID:{E9E4F0C7-70ED-4364-91A8-3BC0EDE8FFB8}" Type="Ref">/My Computer/Shared Variables.lvlib/HMI-10LIC200-SP</Property>
 	<Property Name="varPersistentID:{EA8F6848-EFCD-4D60-BA64-A5A184744AAD}" Type="Ref">/My Computer/Shared Variables.lvlib/SIS-10SDV500</Property>
 	<Property Name="varPersistentID:{F27DA87E-19FE-489C-AFFA-A97D4CF39F54}" Type="Ref">/My Computer/Shared Variables.lvlib/SIS-10SDV501</Property>
-	<Property Name="varPersistentID:{FAF41395-8CEC-408B-9D01-5358A1BEC079}" Type="Ref">/SIS-NI-cRIO-9063-01c525ec/SIS Variables.lvlib/SIS-SIM-TX-ARRAY</Property>
 	<Property Name="varPersistentID:{FB860FD0-1E5B-45B0-979D-04B390BCF92F}" Type="Ref">/My Computer/Shared Variables.lvlib/BPCS-10TI105</Property>
 	<Property Name="varPersistentID:{FE15934A-AA0E-48AF-8EF1-DCA9EE7599AF}" Type="Ref">/My Computer/Shared Variables.lvlib/SIS-10TI101</Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -51,9 +48,49 @@
 		<Property Name="server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">true</Property>
+		<Item Name="BPCS-Malicious-DE-OnePID.vi" Type="VI" URL="../../ReactorSIM/BPCS-Malicious-DE-OnePID.vi"/>
+		<Item Name="BPCS-Malicious-DE.vi" Type="VI" URL="../../ReactorSIM/BPCS-Malicious-DE.vi"/>
+		<Item Name="HMI-Malicious-DE.vi" Type="VI" URL="../../ReactorSIM/HMI-Malicious-DE.vi"/>
+		<Item Name="HMI-Malicious.vi" Type="VI" URL="../../ReactorSIM/HMI-Malicious.vi"/>
 		<Item Name="HMI-Reactor.vi" Type="VI" URL="../HMI-Reactor.vi"/>
 		<Item Name="Shared Variables.lvlib" Type="Library" URL="../Shared Variables.lvlib"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="TX-UDP-DE.vi" Type="VI" URL="../TX-UDP-DE.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
+				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
+				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
+				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
+				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
+				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+			</Item>
+		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Application" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
