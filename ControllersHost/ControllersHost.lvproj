@@ -186,6 +186,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="BPCS Variables.lvlib" Type="Library" URL="../BPCS Variables.lvlib"/>
 		<Item Name="BPCS-Malicious-DE-OnePID-Test.vi" Type="VI" URL="../BPCS-Malicious-DE-OnePID-Test.vi"/>
+		<Item Name="BPCS-Malicious-DE-OnePID-User-Event.vi" Type="VI" URL="../BPCS-Malicious-DE-OnePID-User-Event.vi"/>
 		<Item Name="BPCS-Malicious-DE-OnePID.vi" Type="VI" URL="../BPCS-Malicious-DE-OnePID.vi"/>
 		<Item Name="Chassis" Type="cRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
