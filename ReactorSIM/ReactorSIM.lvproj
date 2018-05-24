@@ -33,6 +33,7 @@
 		<Item Name="RX-BPCS-SIM-UDP.vi" Type="VI" URL="../RX-BPCS-SIM-UDP.vi"/>
 		<Item Name="RX-SIS-SIM-UDP.vi" Type="VI" URL="../RX-SIS-SIM-UDP.vi"/>
 		<Item Name="SIM Variables.lvlib" Type="Library" URL="../SIM Variables.lvlib"/>
+		<Item Name="Test.vi" Type="VI" URL="../../ControllersHost/Test.vi"/>
 		<Item Name="TX-SIM-BPCS-UDP.vi" Type="VI" URL="../TX-SIM-BPCS-UDP.vi"/>
 		<Item Name="TX-SIM-SIS-UDP.vi" Type="VI" URL="../TX-SIM-SIS-UDP.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -58,6 +59,7 @@
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="NILVSim.dll" Type="Document" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
@@ -70,7 +72,6 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="OVERRISE-VAR.vi" Type="VI" URL="../OVERRISE-VAR.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
