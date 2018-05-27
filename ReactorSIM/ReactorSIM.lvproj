@@ -1,10 +1,9 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="17008000">
+<Project Type="Project" LVVersion="18008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Property Name="varPersistentID:{146EDB90-D373-4AE3-81F8-2A72E8B4D642}" Type="Ref">/My Computer/SIM Variables.lvlib/SIM-SIS-TX-ARRAY</Property>
-	<Property Name="varPersistentID:{1CE914B9-4B71-45A3-A21C-8DE14BCB2793}" Type="Ref">/My Computer/Local Var.lvlib/output</Property>
 	<Property Name="varPersistentID:{30AD8EC2-BA3D-4467-8CD9-42F0389E118C}" Type="Ref">/My Computer/SIM Variables.lvlib/SIM-BPCS-TX-ARRAY</Property>
 	<Property Name="varPersistentID:{A5529C8F-FE9B-4ED4-8C71-3EB921C72DC6}" Type="Ref">/My Computer/SIM Variables.lvlib/BPCS-SIM-RX-ARRAY</Property>
 	<Property Name="varPersistentID:{D2D4100B-6137-4E24-AFC7-5762FF961E35}" Type="Ref">/My Computer/SIM Variables.lvlib/SIS-SIM-RX-ARRAY</Property>
@@ -30,7 +29,6 @@
 		<Property Name="server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Local Var.lvlib" Type="Library" URL="../Local Var.lvlib"/>
 		<Item Name="ReactorSIM.vi" Type="VI" URL="../ReactorSIM.vi"/>
 		<Item Name="RX-BPCS-SIM-UDP.vi" Type="VI" URL="../RX-BPCS-SIM-UDP.vi"/>
 		<Item Name="RX-SIS-SIM-UDP.vi" Type="VI" URL="../RX-SIS-SIM-UDP.vi"/>
@@ -68,7 +66,7 @@
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="NILVSim.dll" Type="Document" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim.dll"/>
+				<Item Name="NILVSim.dll" Type="Document" URL="/&lt;vilib&gt;/Simulation/Implementation/shared/NILVSim.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
@@ -82,10 +80,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Write JPEG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Write JPEG File.vi"/>
 			</Item>
-			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_001.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_001.vi"/>
-			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_009.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_009.vi"/>
-			<Item Name="NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_010.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B.lvgen/NIMS_NodeEndStatement_Output_53EC0D466D134D7ABD903AC30B43404B_010.vi"/>
-			<Item Name="NIMS_RunTimeType_From StrictType (excl LVString)_1019F277F0A747EDBCA0F6C52CA54500_000.vi" Type="VI" URL="/&lt;instcachedir&gt;/0/NIMS_RunTimeType_From StrictType (excl LVString)_1019F277F0A747EDBCA0F6C52CA54500.lvgen/NIMS_RunTimeType_From StrictType (excl LVString)_1019F277F0A747EDBCA0F6C52CA54500_000.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
