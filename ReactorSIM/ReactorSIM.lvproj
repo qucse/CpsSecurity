@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="18008000">
+<Project Type="Project" LVVersion="17008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
@@ -32,7 +32,6 @@
 		<Item Name="ReactorSIM.vi" Type="VI" URL="../ReactorSIM.vi"/>
 		<Item Name="RX-BPCS-SIM-UDP.vi" Type="VI" URL="../RX-BPCS-SIM-UDP.vi"/>
 		<Item Name="RX-SIS-SIM-UDP.vi" Type="VI" URL="../RX-SIS-SIM-UDP.vi"/>
-		<Item Name="Sig-Override.vi" Type="VI" URL="../Sig-Override.vi"/>
 		<Item Name="SIM Variables.lvlib" Type="Library" URL="../SIM Variables.lvlib"/>
 		<Item Name="TX-SIM-BPCS-UDP.vi" Type="VI" URL="../TX-SIM-BPCS-UDP.vi"/>
 		<Item Name="TX-SIM-SIS-UDP.vi" Type="VI" URL="../TX-SIM-SIS-UDP.vi"/>
@@ -59,7 +58,6 @@
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="NILVSim.dll" Type="Document" URL="/&lt;vilib&gt;/Simulation/Implementation/shared/NILVSim.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
@@ -72,6 +70,7 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="OVERRISE-VAR.vi" Type="VI" URL="../OVERRISE-VAR.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
