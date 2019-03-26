@@ -25,9 +25,9 @@
 		<Property Name="server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">true</Property>
-		<Item Name="HMI-Malicious-DE.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/HMI-Malicious-DE.vi"/>
-		<Item Name="HMI-Reactor.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/HMI-Reactor.vi"/>
-		<Item Name="Shared Variables.lvlib" Type="Library" URL="../../CpsSecurityModbus/ControllersHost/Shared Variables.lvlib"/>
+		<Item Name="HMI-Malicious-DE.vi" Type="VI" URL="../HMI-Malicious-DE.vi"/>
+		<Item Name="HMI-Reactor.vi" Type="VI" URL="../HMI-Reactor.vi"/>
+		<Item Name="Shared Variables.lvlib" Type="Library" URL="../Shared Variables.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -156,20 +156,20 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="BPCS Global Variables.vi" Type="VI" URL="../../Modbus/ControllersHost/BPCS Global Variables.vi"/>
-		<Item Name="BPCS-Malicious-DE-OnePID-Test.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/BPCS-Malicious-DE-OnePID-Test.vi"/>
-		<Item Name="BPCS-Malicious-DE-OnePID-User-Event.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/BPCS-Malicious-DE-OnePID-User-Event.vi"/>
-		<Item Name="BPCS-Malicious-DE-OnePID.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/BPCS-Malicious-DE-OnePID.vi"/>
+		<Item Name="BPCS Global Variables.vi" Type="VI" URL="../BPCS Global Variables.vi"/>
+		<Item Name="BPCS-Malicious-DE-OnePID-Test.vi" Type="VI" URL="../BPCS-Malicious-DE-OnePID-Test.vi"/>
+		<Item Name="BPCS-Malicious-DE-OnePID-User-Event.vi" Type="VI" URL="../BPCS-Malicious-DE-OnePID-User-Event.vi"/>
+		<Item Name="BPCS-Malicious-DE-OnePID.vi" Type="VI" URL="../BPCS-Malicious-DE-OnePID.vi"/>
 		<Item Name="Chassis" Type="cRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
 			<Property Name="crio.Type" Type="Str"></Property>
 		</Item>
-		<Item Name="PIDControllers.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/PIDControllers.vi"/>
-		<Item Name="RX-SIM-BPCS-UDP.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/RX-SIM-BPCS-UDP.vi"/>
-		<Item Name="RX-SIS-BPCS-Modbus.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/RX-SIS-BPCS-Modbus.vi"/>
-		<Item Name="RX-TX-BPCS-HMI-Modbus.vi" Type="VI" URL="../../Modbus/ControllersHost/RX-TX-BPCS-HMI-Modbus.vi"/>
-		<Item Name="TX-BPCS-SIM-UDP.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/TX-BPCS-SIM-UDP.vi"/>
+		<Item Name="PIDControllers.vi" Type="VI" URL="../PIDControllers.vi"/>
+		<Item Name="RX-SIM-BPCS-UDP.vi" Type="VI" URL="../RX-SIM-BPCS-UDP.vi"/>
+		<Item Name="RX-SIS-BPCS-Modbus.vi" Type="VI" URL="../RX-SIS-BPCS-Modbus.vi"/>
+		<Item Name="RX-TX-BPCS-HMI-Modbus.vi" Type="VI" URL="../RX-TX-BPCS-HMI-Modbus.vi"/>
+		<Item Name="TX-BPCS-SIM-UDP.vi" Type="VI" URL="../TX-BPCS-SIM-UDP.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -295,15 +295,15 @@ AddOutputFilter chunkFilter
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
 			<Property Name="crio.Type" Type="Str"></Property>
 		</Item>
-		<Item Name="RX-SIM-SIS-UDP (SubVI).vi" Type="VI" URL="../../CpsSecurityModbus2/ControllersHost/RX-SIM-SIS-UDP (SubVI).vi"/>
-		<Item Name="RX-SIM-SIS-UDP.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/RX-SIM-SIS-UDP.vi"/>
-		<Item Name="SafetySystem.vi" Type="VI" URL="../../CpsSecurityModbus2/ControllersHost/SafetySystem.vi"/>
-		<Item Name="SIS (SubVI).vi" Type="VI" URL="../../CpsSecurityModbus2/ControllersHost/SIS (SubVI).vi"/>
-		<Item Name="SIS.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/SIS.vi"/>
-		<Item Name="TX-SIS-BPCS-Modbus (SubVI).vi" Type="VI" URL="../../CpsSecurityModbus2/ControllersHost/TX-SIS-BPCS-Modbus (SubVI).vi"/>
-		<Item Name="TX-SIS-BPCS-Modbus.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/TX-SIS-BPCS-Modbus.vi"/>
-		<Item Name="TX-SIS-SIM-UDP (SubVI).vi" Type="VI" URL="../../CpsSecurityModbus2/ControllersHost/TX-SIS-SIM-UDP (SubVI).vi"/>
-		<Item Name="TX-SIS-SIM-UDP.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/TX-SIS-SIM-UDP.vi"/>
+		<Item Name="RX-SIM-SIS-UDP (SubVI).vi" Type="VI" URL="../RX-SIM-SIS-UDP (SubVI).vi"/>
+		<Item Name="RX-SIM-SIS-UDP.vi" Type="VI" URL="../RX-SIM-SIS-UDP.vi"/>
+		<Item Name="SafetySystem.vi" Type="VI" URL="../SafetySystem.vi"/>
+		<Item Name="SIS (SubVI).vi" Type="VI" URL="../SIS (SubVI).vi"/>
+		<Item Name="SIS.vi" Type="VI" URL="../SIS.vi"/>
+		<Item Name="TX-SIS-BPCS-Modbus (SubVI).vi" Type="VI" URL="../TX-SIS-BPCS-Modbus (SubVI).vi"/>
+		<Item Name="TX-SIS-BPCS-Modbus.vi" Type="VI" URL="../TX-SIS-BPCS-Modbus.vi"/>
+		<Item Name="TX-SIS-SIM-UDP (SubVI).vi" Type="VI" URL="../TX-SIS-SIM-UDP (SubVI).vi"/>
+		<Item Name="TX-SIS-SIM-UDP.vi" Type="VI" URL="../TX-SIS-SIM-UDP.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -341,7 +341,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="Global Variables.vi" Type="VI" URL="../../CpsSecurityModbus/ControllersHost/Global Variables.vi"/>
+			<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
