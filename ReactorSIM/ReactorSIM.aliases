@@ -2,7 +2,7 @@
 BPCS-NI-cRIO-9064-01c4fb12 = "192.168.0.5"
 
 [My Computer]
-My Computer = "192.168.0.3"
+My Computer = "172.22.11.1"
 
 [NI-cRIO-9064-01c4fb12]
 NI-cRIO-9064-01c4fb12 = "172.22.11.2"
