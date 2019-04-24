@@ -165,10 +165,16 @@ AddOutputFilter chunkFilter
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
 			<Property Name="crio.Type" Type="Str"></Property>
 		</Item>
+		<Item Name="Controller.vi" Type="VI" URL="../Controller.vi"/>
+		<Item Name="PIDControllers (SubVI).vi" Type="VI" URL="../PIDControllers (SubVI).vi"/>
 		<Item Name="PIDControllers.vi" Type="VI" URL="../PIDControllers.vi"/>
+		<Item Name="RX-SIM-BPCS-UDP (SubVI).vi" Type="VI" URL="../RX-SIM-BPCS-UDP (SubVI).vi"/>
 		<Item Name="RX-SIM-BPCS-UDP.vi" Type="VI" URL="../RX-SIM-BPCS-UDP.vi"/>
+		<Item Name="RX-SIS-BPCS-Modbus (SubVI).vi" Type="VI" URL="../RX-SIS-BPCS-Modbus (SubVI).vi"/>
 		<Item Name="RX-SIS-BPCS-Modbus.vi" Type="VI" URL="../RX-SIS-BPCS-Modbus.vi"/>
+		<Item Name="RX-TX-BPCS-HMI-Modbus (SubVI).vi" Type="VI" URL="../RX-TX-BPCS-HMI-Modbus (SubVI).vi"/>
 		<Item Name="RX-TX-BPCS-HMI-Modbus.vi" Type="VI" URL="../RX-TX-BPCS-HMI-Modbus.vi"/>
+		<Item Name="TX-BPCS-SIM-UDP (SubVI).vi" Type="VI" URL="../TX-BPCS-SIM-UDP (SubVI).vi"/>
 		<Item Name="TX-BPCS-SIM-UDP.vi" Type="VI" URL="../TX-BPCS-SIM-UDP.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
