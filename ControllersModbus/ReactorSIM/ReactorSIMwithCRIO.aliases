@@ -1,0 +1,9 @@
+[BPCS-NI-cRIO-9064-01c4fb12]
+BPCS-NI-cRIO-9064-01c4fb12 = "192.168.0.5"
+
+[My Computer]
+My Computer = "192.168.0.20"
+
+[SIS-NI-cRIO-9063-01c525ec]
+SIS-NI-cRIO-9063-01c525ec = "192.168.0.4"
+

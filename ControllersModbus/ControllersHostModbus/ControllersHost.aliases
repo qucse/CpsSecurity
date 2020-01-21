@@ -1,0 +1,33 @@
+[BPCS-NI-cRIO-9064-01c4fb12]
+BPCS-NI-cRIO-9064-01c4fb12 = "192.168.0.5"
+
+[DCS Controller-RT CompactRIO Target]
+DCS Controller-RT CompactRIO Target = "0.0.0.0"
+
+[My Computer]
+My Computer = "192.168.0.2"
+
+[Networked Computer/Device]
+Networked Computer/Device = "192.168.0.2"
+
+[NI-cRIO-9064-01c4fb12]
+NI-cRIO-9064-01c4fb12 = "172.22.11.2"
+
+[NI-myRIO-1900-0304a776]
+NI-myRIO-1900-0304a776 = "172.22.11.2"
+
+[RT CompactRIO Target]
+RT CompactRIO Target = "172.22.11.2"
+
+[SIM-NI-myRIO-1900-0304a776 2]
+SIM-NI-myRIO-1900-0304a776 2 = "192.168.0.3"
+
+[Simulator HMI]
+Simulator HMI = "192.168.1.5"
+
+[SIS-NI-cRIO-9063-01c525ec]
+SIS-NI-cRIO-9063-01c525ec = "192.168.0.4"
+
+[TE Simulator-RT CompactRIO Target]
+TE Simulator-RT CompactRIO Target = "0.0.0.0"
+
