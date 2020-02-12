@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="18008000">
 	<Property Name="varPersistentID:{0632C08C-81E5-4008-8696-D947086B8C3D}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod2/AI2</Property>
-	<Property Name="varPersistentID:{101FFAAE-C717-4197-9A26-23DA81A0D293}" Type="Ref">/My Computer/Shared Variables.lvlib/stop</Property>
 	<Property Name="varPersistentID:{1069E64E-D2F2-4DA0-B81E-8189E6C805D7}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod2/AI23</Property>
 	<Property Name="varPersistentID:{1F8E6946-0C6B-4201-B3B4-3C162383880E}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod2/AI21</Property>
 	<Property Name="varPersistentID:{1FF4552D-3C86-4AFE-A5E2-26EDD9EC306D}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod4/AO8</Property>
 	<Property Name="varPersistentID:{2310848A-3A56-458C-949B-A4F4EAEA5B40}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod2/AI10</Property>
+	<Property Name="varPersistentID:{25279132-C930-48FF-9EDB-13DD09BA544A}" Type="Ref">/My Computer/Shared Variables.lvlib/stop</Property>
 	<Property Name="varPersistentID:{2C01843C-EEB2-464B-9966-CD88FA11B9A6}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod4/AO4</Property>
 	<Property Name="varPersistentID:{3B94F3C7-38AA-4DFD-9345-623FEF99F02B}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod2/AI1</Property>
 	<Property Name="varPersistentID:{446EA52D-5AF3-402D-B71D-259F3B8FAC84}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod4/AO15</Property>
@@ -44,7 +44,6 @@
 	<Property Name="varPersistentID:{EDA55237-8115-430C-AE96-666417D2ED22}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod4/AO9</Property>
 	<Property Name="varPersistentID:{F0A4E8DB-4899-4FFA-8892-43E5DAE95B8C}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod4/AO2</Property>
 	<Property Name="varPersistentID:{F1059471-0270-4329-9FBA-AB69D7499682}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod4/AO13</Property>
-	<Property Name="varPersistentID:{F6073CC8-32A3-4857-ABEC-CE5E1819EE08}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/BPCS Shared Variables.lvlib/10HIC300</Property>
 	<Property Name="varPersistentID:{F7A260F8-14E0-4E0D-BADA-420557752FA9}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod2/AI8</Property>
 	<Property Name="varPersistentID:{FBE6D792-AED3-4FA7-83EE-9527A240A4B7}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod2/AI22</Property>
 	<Property Name="varPersistentID:{FDF05F09-3F2A-4F2C-B419-D62F48A3ACC6}" Type="Ref">/BPCS-NI-cRIO-9064-01c4fb12/Chassis/Real-Time Scan Resources/Mod2/AI24</Property>
@@ -60,6 +59,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="HMI-BPCS-RX.vi" Type="VI" URL="../HMI-BPCS-RX.vi"/>
 		<Item Name="HMI-Reactor.vi" Type="VI" URL="../HMI-Reactor.vi"/>
 		<Item Name="Shared Variables.lvlib" Type="Library" URL="../Shared Variables.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -69,7 +69,6 @@
 				<Item Name="Modbus Master.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Modbus/master/Modbus Master.lvclass"/>
 				<Item Name="SubVIs.lvlib" Type="Library" URL="/&lt;vilib&gt;/Modbus/subvis/SubVIs.lvlib"/>
 			</Item>
-			<Item Name="HMI-BPCS-RX.vi" Type="VI" URL="../HMI-BPCS-RX.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -152,7 +151,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="BPCS Global Variables.vi" Type="VI" URL="../BPCS Global Variables.vi"/>
-		<Item Name="BPCS Shared Variables.lvlib" Type="Library" URL="../BPCS Shared Variables.lvlib"/>
 		<Item Name="Chassis" Type="cRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">express</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
@@ -975,10 +973,10 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="Controller.vi" Type="VI" URL="../Controller.vi"/>
 		<Item Name="PIDControllers (SubVI).vi" Type="VI" URL="../PIDControllers (SubVI).vi"/>
-		<Item Name="RX-SIM-BPCS-UDP (SubVI).vi" Type="VI" URL="../RX-SIM-BPCS-UDP (SubVI).vi"/>
+		<Item Name="RX-SIM-BPCS-Wired (SubVI).vi" Type="VI" URL="../RX-SIM-BPCS-Wired (SubVI).vi"/>
 		<Item Name="RX-SIS-BPCS-Modbus (SubVI).vi" Type="VI" URL="../RX-SIS-BPCS-Modbus (SubVI).vi"/>
 		<Item Name="RX-TX-BPCS-HMI-Modbus (SubVI).vi" Type="VI" URL="../RX-TX-BPCS-HMI-Modbus (SubVI).vi"/>
-		<Item Name="TX-BPCS-SIM-UDP (SubVI).vi" Type="VI" URL="../TX-BPCS-SIM-UDP (SubVI).vi"/>
+		<Item Name="TX-BPCS-SIM-Wired (SubVI).vi" Type="VI" URL="../TX-BPCS-SIM-Wired (SubVI).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -1108,12 +1106,10 @@ AddOutputFilter chunkFilter
 				<Property Name="crio.ModuleContainerType" Type="Str">crio.RSIModuleContainer</Property>
 			</Item>
 		</Item>
-		<Item Name="RX-SIM-SIS-UDP (SubVI).vi" Type="VI" URL="../RX-SIM-SIS-UDP (SubVI).vi"/>
-		<Item Name="RX-SIS-BPCS-Modbus (SubVI).vi" Type="VI" URL="../RX-SIS-BPCS-Modbus (SubVI).vi"/>
+		<Item Name="RX-SIM-SIS-Wired (SubVI).vi" Type="VI" URL="../RX-SIM-SIS-Wired (SubVI).vi"/>
 		<Item Name="SafetySystem.vi" Type="VI" URL="../SafetySystem.vi"/>
-		<Item Name="SIS (SubVI).vi" Type="VI" URL="../SIS (SubVI).vi"/>
 		<Item Name="TX-SIS-BPCS-Modbus (SubVI).vi" Type="VI" URL="../TX-SIS-BPCS-Modbus (SubVI).vi"/>
-		<Item Name="TX-SIS-SIM-UDP (SubVI).vi" Type="VI" URL="../TX-SIS-SIM-UDP (SubVI).vi"/>
+		<Item Name="TX-SIS-SIM-Wired (SubVI).vi" Type="VI" URL="../TX-SIS-SIM-Wired (SubVI).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -1183,7 +1179,6 @@ AddOutputFilter chunkFilter
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="Modbus Master.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Modbus/master/Modbus Master.lvclass"/>
 				<Item Name="Modbus Slave.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Modbus/slave/Modbus Slave.lvclass"/>
 				<Item Name="Mutex Collection.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Mutex Collection.ctl"/>
 				<Item Name="myRIO Generic Hardware Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/myRIO Generic Hardware Reference.ctl"/>
@@ -1262,7 +1257,6 @@ AddOutputFilter chunkFilter
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="BPCS Global Variables.vi" Type="VI" URL="../BPCS Global Variables.vi"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
