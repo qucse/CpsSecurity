@@ -69,6 +69,7 @@
 	<Property Name="varPersistentID:{C8233E27-7E9D-45DF-866B-4931FB84DD13}" Type="Ref">/SIM-NI-cRIO-9063-01c525ec/Chassis/Real-Time Scan Resources/Mod3/DIO11</Property>
 	<Property Name="varPersistentID:{C86E6C16-FA53-4A89-9990-270432D4B3DE}" Type="Ref">/SIM-NI-cRIO-9063-01c525ec/Chassis/Real-Time Scan Resources/Mod4/AI19</Property>
 	<Property Name="varPersistentID:{CF6C58AB-0C12-4272-BE29-46E8EF9276A1}" Type="Ref">/SIM-NI-cRIO-9063-01c525ec/Chassis/Real-Time Scan Resources/Mod1/AO8</Property>
+	<Property Name="varPersistentID:{D2C11034-4714-4219-84D0-373723B4A76D}" Type="Ref">/SIM-NI-cRIO-9063-01c525ec/SharedVariables.lvlib/stop</Property>
 	<Property Name="varPersistentID:{DB76EA71-AF53-43AE-9551-33B973993D70}" Type="Ref">/SIM-NI-cRIO-9063-01c525ec/Chassis/Real-Time Scan Resources/Mod3/DIO30</Property>
 	<Property Name="varPersistentID:{DBE5B463-0027-40E7-9DAD-CE6FC8EA5512}" Type="Ref">/SIM-NI-cRIO-9063-01c525ec/Chassis/Real-Time Scan Resources/Mod3/DIO12</Property>
 	<Property Name="varPersistentID:{DEDD432D-6EB0-42B1-9358-646C75E14D84}" Type="Ref">/SIM-NI-cRIO-9063-01c525ec/Chassis/Real-Time Scan Resources/Mod4/AI22</Property>
@@ -1405,7 +1406,9 @@ AddOutputFilter chunkFilter
 				</Item>
 			</Item>
 		</Item>
+		<Item Name="DataLogging (SubVI).vi" Type="VI" URL="../DataLogging (SubVI).vi"/>
 		<Item Name="ReactorSIM.vi" Type="VI" URL="../ReactorSIM.vi"/>
+		<Item Name="SharedVariables.lvlib" Type="Library" URL="../SharedVariables.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
